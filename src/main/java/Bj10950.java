@@ -6,7 +6,7 @@ public class Bj10950 {
         int a;
         a = s.nextInt();
 
-        s.close();
+       
 
         int sum = 0;
 
