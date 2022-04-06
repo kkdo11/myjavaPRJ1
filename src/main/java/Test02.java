@@ -1,16 +1,18 @@
-public class Test02 {
+import java.util.Scanner;
+
+public class Test02{
+
     public static void main(String[] args) {
-        int a = 10;
+        Scanner in = new Scanner(System.in);
 
-        System.out.printf("%d \n", a);
+        int y = in.nextInt();
+        in.close();
 
-        System.out.printf("%d \n", a);
-
-        System.out.printf("%d \n", ++a);
-
-        System.out.printf("%d \n", a);
-
-        System.out.printf("%d \n", a % 2);
-
+        if(y%4==0) {
+            if(y%400==0) System.out.println("1");
+            else if(y%100==0) System.out.println("0");
+            else System.out.println("1");
+        }
+        else System.out.println("0");
     }
 }
