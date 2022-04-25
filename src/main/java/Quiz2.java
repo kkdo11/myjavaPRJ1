@@ -7,8 +7,8 @@ public class Quiz2 {
 
 
         for( i=5; i>0; i--){
-            f *=i;
-            System.out.println("중간 계산값 "+f);
+            f =f*i;
+            System.out.printf("중간 계산값은 %d \n",f);
         }
         System.out.println("5!값은 "+f);
 
