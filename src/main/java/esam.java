@@ -1,23 +1,27 @@
+
+
+
 import java.util.Scanner;
 
-public class esam{
+public class esam {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         int N = in.nextInt();
-        int X = in.nextInt();
-        int arr[] = new int[N];
-
-        for (int i = 0; i < N; i++) {
-            arr[i] = in.nextInt();
-        }
-
         in.close();
 
-        for (int i = 0; i < N; i++) {
-            if (arr[i] < X) {
-                System.out.print(arr[i] + " ");
+        int cnt = 0;
+        int copy = N;
+
+        while (true) {
+            N = ((N % 10) * 10) + (((N / 10) + (N % 10)) % 10);
+            cnt++;
+
+            if (copy == N) {
+                break;
             }
         }
+        System.out.println(cnt);
     }
 }
