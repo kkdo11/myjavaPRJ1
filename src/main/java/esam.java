@@ -8,20 +8,11 @@ public class esam {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        int N = in.nextInt();
-        in.close();
-
-        int cnt = 0;
-        int copy = N;
-
-        while (true) {
-            N = ((N % 10) * 10) + (((N / 10) + (N % 10)) % 10);
-            cnt++;
-
-            if (copy == N) {
-                break;
+        int sum = 0;
+        for (int i = 50; i < 101; i++) {
+            if ((i % 3 == 0) || (i % 7 == 0) || (i % 11 != 0)) {
+                sum += i;
             }
-        }
-        System.out.println(cnt);
-    }
-}
+
+        }System.out.printf("%d \n", sum);
+    }}
