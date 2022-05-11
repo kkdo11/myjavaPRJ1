@@ -12,9 +12,11 @@ public class framework {
 
         int listSize = list.size();
 
-        list.forEach(name -> System.out.println("name :" + name));
+        for (String name : list) {
+            System.out.println("이름 :" + name);
+        }
+
 
 
     }
 }
-
