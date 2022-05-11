@@ -12,7 +12,10 @@ public class framework {
 
         int listSize= list.size();
 
-        for (int i=0; i<listSize; i++){
-            System.out.println("이름 : "+ list.get(i));
+        for (String name : list) {
+            System.out.println("이름 :" +name);
+
+
+
     }}
 }
