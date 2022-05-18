@@ -6,6 +6,7 @@ public class hashmap {
 
         map.put("name","이협건");
         map.put("email","hglee67@kopo.ac.kr");
+        map.put("addr","서울");
         map.put("dept","데이터분석과");
 
         System.out.println("------------------------------------");
