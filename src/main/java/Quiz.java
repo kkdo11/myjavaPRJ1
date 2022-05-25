@@ -1,41 +1,27 @@
-import java.util.Scanner;
-
 public class Quiz {
-    //Q1. 내가 입력한 숫자가 홀인지 짝인지 출력해주는 프로그램
-    //내가 입력한 숫자가 3의 배수인지 5의 배수인지 출력해주는 프로그램
-
-
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int a;
+        //05/25  //서버로그 샘플//IP만 출력
+        String log = "111.222.33.44 - - [11/Jun/2012:22:12:32 +0900] \"GET /w/custom/jmnote20120124.ico HTTP/1.1\" 304 - \"-\" \"" +
+                "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; MS-RTC LM 8)\"";
+//ip출력
+        int pos= log.indexOf(" ");
+        System.out.println("pos :"+pos);
 
-        System.out.printf("숫자 입력");
-        a = s.nextInt();
+        String ip= log.substring(0,pos);
+      System.out.println("ip:" +ip);
 
-        if (a % 2 == 1)
-            System.out.printf("홀 \n");
-        else
-            System.out.printf("짝 \n");
+        String[] item= log.split(" ");
+        System.out.println("ip:"+item[0]);
+
+        System.out.println("time :"+ item[3]);
+        String time = item[3].substring(1);
+
+        System.out.println("time : "+ time);
 
 
-        System.out.printf("숫자 입력 \n");
-        a = s.nextInt();
 
-        if ((a % 3 == 0) && (a % 5 == 0))
-            System.out.printf("3과 5의 배수를 모두 만족합니다 ");
-        else if (a % 5 == 0)
-            System.out.printf("5의배수 입니다 ");
-        else if (a % 3 == 0)
-            System.out.printf("3의배수 입니다 ");
 
-        /*if((a%3==0)&&(a%5==0))
-            System.out.printf("3과 5의 배수를 모두 만족합니다 ");
-        else
-        if(a%5==0)
-            System.out.printf("5의배수 입니다 ");
-        else
-        if(a%3==0)
-            System.out.printf("3의배수 입니다 ");
-*/
+
+
     }
 }
