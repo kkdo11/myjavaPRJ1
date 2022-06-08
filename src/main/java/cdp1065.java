@@ -9,11 +9,11 @@ public class cdp1065 {
         c=in.nextInt();
 
         if (a%2==0)
-            System.out.printf("%d",a);
+            System.out.printf("%d \n",a);
         if (b%2==0)
-            System.out.printf("%d",b);
+            System.out.printf("%d \n",b);
         if (c%2==0)
-            System.out.printf("%d",c);
+            System.out.printf("%d \n",c);
 
     }
 }

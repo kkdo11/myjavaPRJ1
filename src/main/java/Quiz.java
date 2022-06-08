@@ -14,14 +14,9 @@ public class Quiz {
         System.out.println("ip:"+item[0]);
 
         System.out.println("time :"+ item[3]);
+
         String time = item[3].substring(1);
-
         System.out.println("time : "+ time);
-
-
-
-
-
 
     }
 }
