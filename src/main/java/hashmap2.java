@@ -32,13 +32,17 @@ public class hashmap2 {
         int listSize = list.size();//for문을 쓰기위해서는 배열의 개수를 알아야하기 때문
 
 
-        for (int i = 0; i < listSize; i++) {
-            Map rMap = list.get(i);
-            System.out.println("------------------------------------");
-            System.out.println("name :"  +rMap.get("name"));
-            System.out.println("email :" +rMap.get("email"));
-            System.out.println("addr :"  +rMap.get("addr"));
-            System.out.println("dept :"  +rMap.get("dept"));
-        }
+//        for (int i = 0; i < listSize; i++) {
+//            Map rMap = list.get(i);
+//            System.out.println("------------------------------------");
+//            System.out.println("name :"  +rMap.get("name"));
+//            System.out.println("email :" +rMap.get("email"));
+//            System.out.println("addr :"  +rMap.get("addr"));
+//            System.out.println("dept :"  +rMap.get("dept"));
+        list.forEach(name->{
+            System.out.println(map.get("name"));
+            System.out.println(map.get("dept"));
+
+        } );
     }
 }

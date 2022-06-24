@@ -20,15 +20,18 @@ public class Quiz0518 {
 
         map=null;
 
-        List<String>list2=new ArrayList<>();
-        list2.add("이협건");
-        list2.add("홍길동");
+//        List<String>list2=new ArrayList<>();
+//        list2.add("이협건");
+//        list2.add("홍길동");
+//
+//        for (String name: list2){
+//            System.out.println("name:"+name);
 
-        for (String name: list2){
-            System.out.println("name:"+name);
-        }
 
-        list2.forEach(name-> System.out.println("name:" +name));
+        list.forEach(rmap->{
+            System.out.println(rmap.get("name"));
+            System.out.println(rmap.get("dept"));
+        });
 
 
 
